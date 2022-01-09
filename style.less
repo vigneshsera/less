@@ -1,0 +1,122 @@
+// @primarycolor: #FF7F50;
+// @color:#800080;
+// h1 {
+//    color: @primarycolor;
+// }
+
+// h3 {
+//    color: @color;
+// }
+
+
+// .container {
+//     h1 {
+//        font-size: 25px;
+//        color:#E45456;
+//     }
+//     p {
+//        font-size: 25px;
+//        color:#3C7949;
+//     }
+ 
+//     .myclass {
+//        h1 {
+//           font-size: 25px;
+//           color:#E45456;
+//        }
+//        p {
+//           font-size: 25px;
+//           color:#3C7949;
+//        }
+//     }
+//  }
+
+
+// .myclass {
+//     @media screen {
+//        color: blue;
+//        @media (min-width: 1024px) {
+//           color: green;
+//        }
+//     }
+//     @media mytext {
+//        color: black;
+//     }
+//  }
+
+// @fontSize: 10px;
+// .myclass {
+//    font-size: @fontSize * 2;
+//    color:green;
+// }
+
+// p {
+//     color: ~"green";
+//  }
+
+// @color: #FF8000;
+// @width:1.0;
+// .mycolor {
+//    color: @color;
+//    width: percentage(@width);
+// }
+
+// .class1 {
+//     .class2 {
+//        .val(@param) {
+//           font-size: @param;
+//           color:green;
+//        }
+//     }
+//  } 
+//  .myclass {
+//     .class1 > .class2 > .val(20px);
+//  }
+
+
+// @var: @a;
+// @a: 15px;
+
+// .myclass {
+//    font-size: @var;
+//    @a:20px;
+//    color: green;
+// }
+
+
+// /* It displays the
+// green color! */
+// .myclass {
+//     color: green;
+//  }
+ 
+//  // It displays the blue color
+//  .myclass1 {
+//     color: red;
+//  }
+
+// @import "myfile.less";
+// .myclass2 {
+//    color: #FF0000;
+// }
+
+// h2 {
+//     &:extend(.style);
+//     font-style: italic;
+//  }
+ 
+//  .style {
+//     background: green;
+//  }
+
+.style:extend(.container, .img) {
+    background: #BF70A5;
+ }
+ 
+ .container {
+    font-style: italic;
+ }
+ 
+ .img {
+    font-size: 30px;
+ }
